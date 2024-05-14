@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="register.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    
+    <!--nav bar-->
+    <header class="header" id="header">
+        <a href="../index.html">
+            <img src="../dramama-logo.png" alt="dramama logo" class="logo">
+        </a>
+            <div class="group">
+                <ul class="nav-links">
+                    <li><a href="../trailers/trailers.html">Trailers</a></li>
+                    <li><a href="../spoilers/spoilers.html">Spoilers</a></li>
+                    <li><a href="../quizzes/quizzes.html">Quizzes</a></li>
+                </ul>
+                <a href="#"><button class="login-btn">Register</button></a>
+                <div class="search-links">
+                    <span class="search-icon">
+                        <ion-icon name="search-outline" class="search-btn"></ion-icon>
+                        <ion-icon name="close-outline" class="close-btn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder= " search . . . ">
+            </div>
+    </header>
+
+    <!--form box-->
+    <div class="container">
+        <div class="register">
+            <h2>Register</h2>
+            <form id="register" action="http://localhost:4447/api/users/register" method="POST">
+                <div class="input">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="username" placeholder="Username..." required>
+                    <label>Username</label>
+                </div>
+                <div class="input">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" placeholder="Email..." required>
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="password" name="password" placeholder="Password..." required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="button">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
