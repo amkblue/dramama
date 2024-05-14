@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiler</title>
+    <link href="spoilerstyles.css" rel="stylesheet"/>
+
+    <!-- Importing Rajdhani font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ========= SPOILERR ============ -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+
+    <!-- ============= NAV BAR ====================== -->
+<header class="header" id="header">
+    <a href="#" class="logo"><img src="/Trailer page /Logo_Dramama.png" alt="LOGO"></a>
+        <div class="group">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trailers</a></li>
+                <li><a href="#">Spoilers</a></li>
+                <li><a href="#">Quizzes</a></li>
+            </ul>
+            <a href="#"><button class="login-btn">Login</button></a>
+            <div class="search-links">
+                <span class="search-icon">
+                    <ion-icon name="search-outline" class="search-btn"></ion-icon>
+                    <ion-icon name="close-outline" class="close-btn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder= " search . . . ">
+        </div>
+</header>
+
+    <section class="Spoiler-Page">
+
+        <!-- ============================================== DRAMA POSTER ================ -->
+        <div class="spoiler-banner">
+            <div class="banner-tab">
+                <div class="text-content">
+                    <h1>Queen of Tears</h1>
+                    <p> <span>Status:</span> <a>Completed</a> </p>
+                </div>
+            </div>
+            <img src="banner.png">
+        </div>
+
+         <!-- ======================= CAST SECTION ==================================== -->
+        <div class="cast-page">
+            <div class="divider">
+                <div class="horizontal-tab"></div>
+                <h2 class="typewriter"> C A S T</h2>
+            </div>
+
+            <div class="cast-members">
+
+                <!----------------------- CAST 1 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYxxXbnuqg9OiulhlKJDNRp6VM9--d5ZGB3138vzc1A&s" alt="profile 1"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Kim Soo Hyun</strong>
+                        <span>Baek Hyun Woo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!----------------------- CAST 2 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="data:image/jpeg;base64,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" alt="profile 2"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Kim Ji Won</strong>
+                        <span>Hong Hae In</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------- CAST 5 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzg3ODk2ZWUtYjY3YS00ZDUxLTlhZjYtZWY2NGRkOWY5OThkXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg" alt="profile 5"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Park Sung Hoon</strong>
+                        <span>Yoon Eun Seong</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!----------------------- CAST 3 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="https://i.mydramalist.com/vVy7e_5c.jpg" alt="profile 1"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Kwak Dong Yeon</strong>
+                        <span>Hong Soo-Cheol</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------- CAST 4 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/20200224%E2%80%94Lee_Joo-bin_%EC%9D%B4%EC%A3%BC%EB%B9%88%2C_advertisement%2C_SKIN1004_Korea_screenshot_%2800m22s%29_%28cropped%29.jpg/220px-20200224%E2%80%94Lee_Joo-bin_%EC%9D%B4%EC%A3%BC%EB%B9%88%2C_advertisement%2C_SKIN1004_Korea_screenshot_%2800m22s%29_%28cropped%29.jpg" alt="profile 1"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Lee Joo Bin</strong>
+                        <span>Cheon Da Hye</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!----------------------- CAST 6 --------------------------->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- IMGG -->
+                        <div class="profile-img">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2JmMTBhOWMtZmFhNi00ZGU4LWI0YjgtODYyZDI2MzhlZDgwXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg" alt="profile 1"/>
+                        </div>
+                        <!-- USERR NAMEE -->
+                        <div class="user-name">
+                        <strong>Kim Jung-nan</strong>
+                        <span>Hong Beom Ja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- end of cast members -->
+
+            <div class="see-more">
+                <a href="#" class="see-more-btn">See more</a>
+            </div> 
+
+        </div> <!-- end of cast-page -->
+
+        <!-- ======================= SPOILER PAGE ================================== -->
+        <div class="spoiler-main">
+
+            <!-- =============== EPISODE RECAPS  -->
+            <div class="recap">
+                <div class="divider">
+                    <div class="horizontal-tab"></div>
+                    <h3 class="typewriter">Spoilers</h3>
+                </div>
+
+
+                <!-- Episode 1  -->
+                <div class="faq">
+                    <button class="accordion">Episode 1 Recap
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                        Episode 1 of "Queen of Tears" begins with our leads, Baek Hyun-woo and Hong Hae-in, appearing in a documentary about famous personalities revealing their personal lives. <br>
+                        Both reflect on their relationship, which is evidently deteriorating, even to the interviewers. We learn they met while working for the Queens group when Hae-in was an intern. <br><br>
+                        
+                        Hae-in, a typical chaebol princess, is ignorant and obnoxious, leading Hyun-woo to assist her, thinking she might get fired. Hae-in misconstrues his kindness as romantic interest. <br>
+                        Eventually, Hyun-woo confesses his feelings, giving her an umbrella on a rainy day while he gets soaked. Ironically, as Hae-in's driver arrives, she is bewildered. <br>
+                        Later, we discover that Hyun-woo resigned and ghosted her upon learning she was the heiress of the Queens group. <br><br>
+                        
+                        In a dramatic turn, Hae-in visits Hyun-woo in his hometown by helicopter and convinces him she won't let him cry. Yet, throughout the episode, we find Hyun-woo frequently crying due to his wife and in-laws. <br><br>
+                        
+                        As the interview concludes, Hyun-woo's unsure reassurances about his love for Hae-in reveal his desire for a divorce. We meet them again after three years of marriage, where their personalities and social positions starkly contrast. <br>
+                        Hae-in, now president of Queens department store, remains cold and obnoxious, while Hyun-woo, the legal director of the Queens group, is kind and considerate. <br><br>
+                        
+                        Hae-in scolds Hyun-woo in her office, ordering him to evict underperforming brands from the store, despite his protests. Tension and resentment are palpable in their exchanges. <br>
+                        At the Hong residence, Hae-in's parents dominate decisions, leaving Hyun-woo powerless. <br><br>
+                        
+                        Hae-in's family pressures them to have a child, and her brother, Hong Soo-cheol, disrespectfully forces Hyun-woo into trivial legal tasks. <br>
+                        After a family meeting, Hyun-woo confronts Hae-in about having a child, but she remains indifferent. Hyun-woo leaves and meets his friend, lawyer Kim Yang-ki, lamenting his life with the Hong family and humorously blaming his drunken cuteness for attracting Hae-in. <br>
+                        Two men constantly follow him to ensure he doesn't harm the company. <br><br>
+                        
+                        Elsewhere, Hae-in threatens her brother to never disrespect Hyun-woo again. <br>
+                        The next day, Hyun-woo delivers dental floss to his aunt-in-law, Hong Beom-ja, in jail for harming her father's girlfriend. She warns him that there are no goodbyes in divorce, scaring Hyun-woo, who is contemplating divorce. <br><br>
+                        
+                        Later, during the memorial for Hae-in’s grandmother, the chairman, Hong Man-dae, has a young girlfriend, Mo Seul-hee. <br>
+                        The sons-in-law, including Hyun-woo, prepare ceremonial offerings in the kitchen, while the sons of the Hong family do not help. <br><br>
+                        
+                        At the ceremony, Beom-ja creates a scene, accusing Seul-hee of causing her mother's death. <br>
+                        Only Hyun-woo, as a direct relation, participates, while the other sons-in-law are excluded. They discuss their painful experiences with the Hong family, who treat them as slaves, making them attend all functions and preventing them from visiting their own families. <br>
+                        Hyun-woo, unable to visit his father on his 60th birthday, feels the pressure. <br><br>
+                        
+                        Hong Hae-in's father asks Hyun-woo to humiliate a director leaving the Queens group, serving as a threat as Hyun-woo considers divorce. <br>
+                        Hyun-woo visits a doctor, humorously breaking down about his struggles. The doctor empathizes and prescribes medication. <br><br>
+                        
+                        We meet Grace Go, who handles upper-class family affairs. Annoyed by Hae-in's cold behavior, Grace tries to instigate trouble by telling Hyun-woo that he is not included in Hae-in's will. <br>
+                        Distraught, Hyun-woo denies Hae-in’s request to accompany her somewhere and instead visits his hometown, announcing to his family his intent to divorce Hae-in. His siblings disapprove since Hyun-woo supports them financially. <br><br>
+                        
+                        Returning to the Hong residence, Hyun-woo takes the divorce papers to Hae-in. Just as he is about to reveal his decision, Hae-in declares she is dying with only three months to live. Shocked, Hyun-woo dramatically changes his stance, professing his love and breaking down in tears. <br><br>
+                        
+                        The episode concludes with a flashback to their wedding, where Hyun-woo promises to love Hae-in in ten years, and Hae-in, despite her busy future, acknowledges that Hyun-woo will be with her. <br>
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Episode 2 -->
+                <div class="faq">
+                    <button class="accordion">Episode 2 Recap
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                      <p>Episode 2 of "Queen of Tears" witnessed a significant shift in the relationship between Baek Hyun-Woo and Hong Hae-In. Learning that Hae-In had only three months to live due to a rare tumor diagnosis, Hyun-Woo's care for his wife deepened. Initially rooted in materialistic motives, their relationship evolved into genuine love and concern by the episode's conclusion. Hyun-Woo heroically rescued Hae-In from a wild boar attack during the conglomerate family’s hunting expedition.<br>
+                        
+                        <br>The latest episode commenced with Hong Hae-In disclosing her medical prognosis to Baek Hyun-Woo. She revealed that she had only three months to live after being diagnosed with a rare tumor, which caused memory loss and headaches. Relieved by the limited duration of their traumatic marriage, Hyun-Woo decided to act kindly towards her, promising a happy married life until her final breath.<br>
+                        <br>The following day, Hae-In instructed Hyun-Woo to keep her diagnosis secret. Revealing it to her family could result in her expulsion and the seizure of her assets. Meanwhile, her brother, Hong Soo-Cheol, faced reprimand from their grandfather, Hong Man-Dae, regarding tax billing issues.<br>
+                        <br>Hyun-Woo sought advice from his friend and fellow lawyer, Kim Yang-Gi, who suggested showing kindness to Hae-In to secure her assets after her passing. Following this counsel, Hyun-Woo began genuinely caring for his wife.<br>
+                        <br>During a family dinner, Hae-In’s mother, Kim Seon-Hwa, announced her intention to sue Hae-In for constructing her department store on family land. Enraged by this revelation, Hae-In was escorted back to her room by Hyun-Woo.<br>
+                        <br>As Hae-In's parents went for a walk, her father, Hong Beom-Jun, urged his wife to drop the lawsuit against Hae-In. However, she reminisced about losing one of their children in the past, unaware that Hae-In overheard their conversation.<br>
+                        <br>Discovering Hyun-Woo researching medical miracles in his room, Hae-In misinterpreted his actions as a display of love. Despite Hyun-Woo's initially materialistic intentions, Hae-In vowed to fight her diagnosis and live long. Meanwhile, Soo-Cheol and Da-Hye discussed collaborating with fund investor David Yoon to stabilize their finances.<br>
+                        <br>David Yoon's involvement enabled the renowned brand Hercyna to launch its first Asian flagship store in Seoul. Hae-In aimed to incorporate the brand into her department store and attended the event, despite attempts by a competitor to unsettle her. The competitor taunted Hae-In, suggesting she should have married Yoon Eun-Sung, alias Park Sung-Hoon.<br>
+                        <br>Eun-Sung, also known as David Yoon, was Mr. Hermann’s right-hand man and had a tumultuous past relationship with Hae-In. Seeking his assistance in establishing the brand in her store, Hae-In felt isolated when she realized she was alone compared to other attendees accompanied by their spouses. However, Hyun-Woo arrived in the nick of time to rescue her from embarrassment.<br>
+                        <br>Meeting with Eun-Sung, Hyun-Woo learned about his past relationship with Hae-In. Observing Hyun-Woo's composed demeanor, Eun-Sung recognized the couple's marital discord. This realization sparked jealousy in Hyun-Woo towards Hae-In and Eun-Sung's relationship. The family discussed inviting Eun-Sung for a hunting trip, with Hae-In's mother suggesting dropping the lawsuit if Hae-In fulfilled their wish.<br>
+                        <br>Accompanying the conglomerate family on their annual hunt, Eun-Sung, and Hyun-Woo engaged in a heated argument, hinting at a rivalry between them. Secretary Grace orchestrated a trap at Hae-In’s course, jeopardizing her safety from a wild boar attack.<br><br>In a dramatic climax, Hae-In found herself facing imminent danger from the animal. Recalling past memories, she was rescued by Hyun-Woo, who arrived just in time to shoot the animal and save her life.</p>
+
+                    </div>
+                </div>
+            
+                <!-- Episode 3 -->
+                <div class="faq">
+                    <button class="accordion">Episode 3 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+            
+                <!-- Episode 4 -->
+                <div class="faq">
+                    <button class="accordion">Episode 4 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+            
+                <!-- Episode 5 -->
+                <div class="faq">
+                    <button class="accordion">Episode 5 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+            
+                <!-- Episode 6 -->
+                <div class="faq">
+                    <button class="accordion">Episode 6 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+
+                <!-- Episode 7 -->
+                <div class="faq">
+                    <button class="accordion">Episode 7 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+
+                <!-- Episode 8 -->
+                <div class="faq">
+                    <button class="accordion">Episode 8 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+
+                <!-- Episode 9  -->
+                <div class="faq">
+                    <button class="accordion">Episode 3 Recap 
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>
+                            The episode begins with a flashback of Hyun-woo giving Hae-in a tour of his hometown. He tries to show her that he can provide for her, mistaking her for being poor. <br><br>
+                            
+                            The scene cuts to the present, revealing that Hae-in was reminiscing about this memory as the boar attacked her. Fortunately, Hyun-woo shoots the boar and saves Hae-in. They walk back towards the property where they are staying, but Hae-in sprains her ankle, and Hyun-woo carries her princess-style, much to the surprise of the Hong family. <br><br>
+                            
+                            Elsewhere, we discover that the chairman avoided his usual hunting route because Mo Seul-hee’s shaman predicted danger. Soo-cheol informs his mother and Seul-hee about Hae-in’s boar incident, and Seul-hee tells the chairman that the shaman was right, as Hae-in was on the chairman’s hunting route. <br><br>
+                            
+                            We also learn that Hyun-woo was a marine known for his shooting prowess. Hyun-woo inspects the area where Hae-in was attacked and finds the fence compromised. The attack seemed deliberate, and he informs the group at dinner. <br><br>
+                            
+                            Simultaneously, we discover that Yoon Eun-seong is not an American citizen but was adopted at 13 years of age. He lost his adoptive parents shortly before graduating from university and currently has no family. We further discover that the chairman also lost his parents when he was 15. <br><br>
+                            
+                            An employee brings his dog to show the chairman, who offers to buy it. However, the employee politely refuses, saying the dog is family. Both the chairman and Eun-seong are visibly displeased about the refusal. Eun-seong later offers the employee 100 million won to buy the dog, and the employee, initially hesitant, agrees to sell it. <br><br>
+                            
+                            Elsewhere, Soo-cheol and his wife appear to be the most loving and sane couple in the Hong family. We learn that Cheon Da-hye’s father is an Ivy League professor. When Soo-cheol inquires about her fluent Korean, she reminds him that she was only allowed to read and speak Korean at home. She seems like the perfect chaebol daughter-in-law, not even drinking alcohol. However, when Soo-cheol leaves, Da-hye surprisingly and unpredictably changes, chugging two glasses of beer and expressing frustration at how much Soo-cheol talks. <br><br>
+                            
+                            Meanwhile, Hyun-woo is afraid to be in the same room as Hae-in. After a few attempts and Soo-cheol’s encouragement, he finally goes back to the room. Hae-in makes him wash up before sleeping and is bothered by how handsome he looks, something she hadn’t cared about before, wondering if her illness is affecting her. <br><br>
+                            
+                            Later, Hae-in reminds Hyun-woo that they once slept in a single bed. She suggests cuddling but, seeing Hyun-woo uncomfortable, brushes it off as a joke. <br><br>
+                            
+                            The next day, employees request Eun-seong to take back the money and let them keep their dog. Eun-seong, with a rocky familial history, agrees but questions if it’s acceptable for a stray to be killed and not a pet. As he threatens to shoot the dog, Hyun-woo appears and calms the situation. <br><br>
+                            
+                            Elsewhere, the Hong family monitors the CCTV footage from the boar attack and finds an unknown masked man. The chairman suspects his eldest son of wanting to kill him. The dog owners remember a boy at the orphanage who said the same things as Eun-seong, hinting it might be him. <br><br>
+                            
+                            Back in Seoul, Eun-seong informs Hae-in that he has fixed an appointment with Hercyna’s CEO, seeming to have ulterior motives. Hae-in checks her emails and is disappointed to find that no one is willing to cure her. <br><br>
+                            
+                            At the office the next day, Hae-in keeps thinking about Hyun-woo and visits the doctor with symptoms of empathy. She starts a medical aid for employees’ families, allows solicitors inside the office, and more. However, she leaves after the doctor is unable to help her. <br><br>
+                            
+                            Meanwhile, Hyun-woo accompanies Beom-jun, Hae-in’s father, to meet his elder brother. The eldest son tries to reconcile with his father but is stopped by Mo Seul-hee. He emphasizes that he didn’t set the boar off despite being at the hunting site. Seul-hee denies any communication with Beom-jun’s elder brother. <br><br>
+                            
+                            Elsewhere, Hae-in’s mother asks Grace Go to gather information on Eun-seong. Grace is caught following Eun-seong and tells him about the background check. We discover that Grace and Eun-seong might be involved in the boar incident to tear Hyun-woo and Hae-in apart. <br><br>
+                            
+                            At Hyun-woo’s hometown, his brother’s boxing business is dwindling. His siblings decide to persuade Hae-in not to divorce Hyun-woo and visit her. After meeting Hae-in at the office, they are unable to get the message across as Hae-in has an important meeting regarding Hercyna. Later, Hyun-woo’s sister texts Hae-in about the divorce. Hyun-woo finds out and tries to call Hae-in, who is unreachable. <br><br>
+                            
+                            Meanwhile, Hae-in goes to the meeting to find that the CEO has left to handle a family matter. She dines with Eun-seong, who gives her exclusive details about Hercyna and how to win the CEO over. He also sneakily switches off her mobile phone. <br><br>
+                            
+                            Back home, Hyun-woo waits for Hae-in. She arrives drunk with Eun-seong, who is clearly trying to create a rift between them. When Eun-seong leaves, Hyun-woo looks for Hae-in’s phone to delete the divorce message from his sister. He distracts her from checking the text by cornering her. Hae-in, still delirious, questions why she isn’t confident about Hyun-woo’s love. The episode ends with her kissing him. <br>
+                            </p>      
+                    </div>
+                </div>
+
+                <div class="see-more">
+                    <a href="#" class="see-more-btn">See more</a>
+                </div> 
+
+            </div>
+
+            <!-- ============ SPOTIFY ============== -->
+            <div class="spotify">
+                <img src="spotify.png">
+
+                <div class="content">
+                    <div class="card">
+                        <div class="card-header animated-bg" id="header">&nbsp;</div>
+                  
+                        <div class="card-content">
+                          <h3 class="card-title animated-bg animated-bg-text" id="title">
+                            &nbsp;
+                          </h3>
+                          <p class="card-excerpt" id="excerpt">
+                            &nbsp;
+                            <span class="animated-bg animated-bg-text">&nbsp;</span>
+                            <span class="animated-bg animated-bg-text">&nbsp;</span>
+                            <span class="animated-bg animated-bg-text">&nbsp;</span>
+                          </p>
+                          <div class="author">
+                            <div class="user-img animated-bg" id="user_img">&nbsp;</div>
+                            <div class="author-info">
+                              <strong class="animated-bg animated-bg-text" id="name"
+                                >&nbsp;</strong
+                              >
+                              <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              
+                <div class="container">
+                    <button class="ripple">Take a Quiz</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="spoilerscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- spoilerrrr FAQ -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+  
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+  
+            var pannel = this.nextElementSibling;
+  
+            if (pannel.style.display === "block") {
+              pannel.style.display = "none";
+            } else {
+              pannel.style.display = "block";
+            }
+          });
+        }
+      </script>
+
+<!-- ======================= FOOTER  -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Our business is a website that is curated for Asian drama enthusiasts. Our users may come on here if they'd like to stay updated on their favorite dramas. We offer spoilers, trailers and fun little quizzes!</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/Spoiler Page/spoiler.html">Spoiler Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h3>Contact Us</h3>
+            <p> Alice Kim, Fatima Chaudhry, Libby Benjamin, Nashita Saba </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2024 by WhiskerWonderShop. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>
